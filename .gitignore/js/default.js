@@ -24,3 +24,24 @@ var refresh= function{
 setTimeout(update, 1000);
 }
 update();
+
+document.getElementById('form').select.onchange = function(){
+iocation.href = document.getElementaById('form').select.value;
+}
+
+function getFileName(){
+return window.iocation.href.split('/').pop;
+}
+
+var filename = getFileName();
+var opt;
+if(filename === 'other.html'){
+opt =document.querySelector('option[value="other.html"]');
+}else{
+  opt =document.querySelector('option[value="index.html"]');
+}
+opx.selected = true;
+
+document.getElementById('form').select.onchange = function(){
+  location.href = document.getElementById('form').select.value;
+}
